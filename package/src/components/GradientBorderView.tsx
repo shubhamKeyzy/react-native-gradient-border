@@ -109,17 +109,17 @@ export const GradientBorderView = ({
       {props.children}
       <GradientBorder
         gradientProps={gradientProps}
-        borderRadius={styles.borderRadius}
+        borderRadius={styles.borderRadius as number}
         borderWidth={styles.borderWidth}
         borderBottomWidth={styles.borderBottomWidth}
         borderRightWidth={styles.borderRightWidth}
         borderLeftWidth={styles.borderLeftWidth}
         borderTopWidth={styles.borderTopWidth}
-        borderTopLeftRadius={styles.borderTopLeftRadius}
-        borderTopRightRadius={styles.borderTopRightRadius}
-        borderBottomRightRadius={styles.borderBottomRightRadius}
-        borderBottomLeftRadius={styles.borderBottomLeftRadius}
+        borderTopLeftRadius={styles.borderTopLeftRadius as number}
+        borderTopRightRadius={styles.borderTopRightRadius as number}
+        borderBottomRightRadius={styles.borderBottomRightRadius as number}
+        borderBottomLeftRadius={styles.borderBottomLeftRadius as number}
       />
     </View>
   );
-}
+};
